@@ -1,0 +1,119 @@
+FREELANCER PAYMENT TRACKER: LICENSE AGREEMENT
+
+Copyright (c) 2026 DigitoolsIN. All rights reserved.
+
+This license applies to the Freelancer Payment Tracker digital product,
+including its source code, design, documentation, any ready-to-use files
+and the online version provided by the seller (together, the "Product"). By purchasing, downloading or using the Product,
+you agree to these terms.
+
+--------------------------------------------------------------------------
+1. WHAT YOU MAY DO
+--------------------------------------------------------------------------
+
+With one purchase, you (one individual person or one business) may:
+
+  a) Use the Product to track payments for your own freelance work or
+     your own business, including commercial work.
+  b) Install and use the Product on any number of your own devices.
+  c) Modify and customise the Product for your own use. For example, you may
+     change its colours, text, sample data or features.
+  d) Host the Product online for your own private use, for example on
+     your own website, as long as it is not offered to others as a
+     product or service.
+  e) Make backup copies of the Product for your own use.
+
+--------------------------------------------------------------------------
+2. THE ONLINE VERSION
+--------------------------------------------------------------------------
+
+Your purchase includes access to an online version of the Product at the
+link given in the User Guide, as a convenience. Please note:
+
+  a) The online version is for the buyer's own use. Please do not share
+     or publish the link.
+  b) The seller may update, change, move or stop the online version at
+     any time, without notice. You always keep the downloadable file,
+     which works offline and does not depend on the online version.
+  c) Data entered in the online version is stored only in your own
+     browser, exactly like the downloadable file. It is separate from data
+     entered in the downloadable file. Use "Export Data" to keep backups
+     and to move data between them.
+
+--------------------------------------------------------------------------
+3. WHAT YOU MAY NOT DO
+--------------------------------------------------------------------------
+
+You may NOT:
+
+  a) Resell, share, give away, sublicense or redistribute the Product, or
+     any modified version of it, whether free or paid. This includes
+     sharing or publishing the link to the online version.
+  b) Include the Product, or substantial parts of its code or design, in
+     any template, theme, app, kit or digital product that you sell or
+     distribute to others.
+  c) Upload the Product to any marketplace, file-sharing site or public
+     code repository (for example a public GitHub repository).
+  d) Offer the Product to other people as a hosted service (for example
+     as a paid web app or SaaS).
+  e) Claim the Product, or its design, as your own original work.
+  f) Remove or alter this license or the copyright notices in the
+     Product's files.
+
+If you need a different kind of license (for example, to use the Product
+for clients or as part of your own product), please contact the seller.
+
+--------------------------------------------------------------------------
+4. YOUR DATA
+--------------------------------------------------------------------------
+
+The Product stores all information you enter only in your own web
+browser (localStorage) on your own device. The seller has no access to,
+and does not collect, your data. You are responsible for keeping backups
+of your data using the Product's "Export Data" feature.
+
+--------------------------------------------------------------------------
+5. NO WARRANTY
+--------------------------------------------------------------------------
+
+THE PRODUCT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+The Product is a simple record-keeping tool. It is not accounting, tax,
+legal or financial software, and it does not give financial advice.
+Always check important figures yourself.
+
+--------------------------------------------------------------------------
+6. LIMITATION OF LIABILITY
+--------------------------------------------------------------------------
+
+To the maximum extent permitted by law, the seller will not be liable for
+any claim, damages, data loss or other liability arising from the use of,
+or inability to use, the Product. This includes data lost because browser
+data was cleared, and any interruption, change or discontinuation of the
+online version. The seller's total liability will not exceed the amount
+you paid for the Product.
+
+--------------------------------------------------------------------------
+7. THIRD-PARTY SOFTWARE
+--------------------------------------------------------------------------
+
+The Product includes open-source software that keeps its own licenses:
+React, React DOM and Scheduler (MIT), Lucide icons (ISC) and Tailwind
+CSS (MIT). Their full license texts are in THIRD-PARTY-NOTICES.txt,
+which must stay with the Product. The source code also uses build tools
+(Vite, TypeScript) that are downloaded separately by "npm install" under
+their own licenses. Nothing in this agreement limits your rights under
+those licenses for those components.
+
+--------------------------------------------------------------------------
+8. TERMINATION
+--------------------------------------------------------------------------
+
+This license ends automatically if you break any of its terms. If it
+ends, you must stop using the Product and delete all copies.
+
+--------------------------------------------------------------------------
+
+Thank you for supporting independent creators!
