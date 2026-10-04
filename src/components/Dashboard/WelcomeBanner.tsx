@@ -1,4 +1,5 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { IS_DEMO } from '../../config';
 import { BrandMark } from '../Layout/Logo';
 import { Button } from '../UI/Button';
 
@@ -24,7 +25,7 @@ export function WelcomeBanner({ onGetStarted, onStartFresh }: WelcomeBannerProps
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
           Keep your client payments organized in one simple place. We’ve added a few sample payments so you can
-          look around — everything stays private in this browser.
+          look around{IS_DEMO ? '. This is a free demo, so nothing you change is saved.' : ' — everything stays private in this browser.'}
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-2">
           <Button onClick={onGetStarted}>

@@ -22,26 +22,11 @@ What this means for you:
 
 ## 1. Open the application
 
-You can use the tracker in **two ways**. Pick one and stick with it.
-
-### Option A: Use it online (easiest)
-
-1. Open this link in your browser: **[https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/](https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/)**
-2. **Bookmark it**, or on a phone use **"Add to Home Screen"**, so it's always one tap away.
-
-This works on your computer, tablet and phone. It needs an internet connection to open.
-
-### Option B: Use the downloaded file (works offline)
-
 1. Find the file **`Freelancer-Payment-Tracker.html`** in your download.
-2. **Double-click** it. It opens in your web browser.
-3. Keep the file somewhere easy to find, such as your Desktop. Always open the **same file, from the same place**.
+2. **Double-click** it. It opens in your web browser. No internet connection is needed.
+3. Keep the file somewhere easy to find, such as your Desktop. Always open the **same file, from the same place, in the same browser**, and your payments will be there each time.
 
-Keep this file safe even if you use the online version. It's your own copy and works without the internet.
-
-> **Important:** the online version and the downloaded file keep **separate** data, even in the same browser. Payments you add online won't appear in the file, and the other way round. To move your data from one to the other, use **Export Data** in one and **Import Data** in the other (see steps 7 and 8).
-
-Whichever you choose, use the **same browser** each time, and your payments will be there.
+> **Tried the online demo before buying?** The demo never saves anything, so nothing carries over. This downloaded file is the **full version**: it saves your payments automatically and includes backups (Export and Import).
 
 The first time you open it, you'll see a welcome message and some **sample payments** so you can explore. Click **Get Started** to keep them for now, or **Remove sample data** to start with an empty tracker.
 
@@ -206,13 +191,13 @@ Click **Print Report** on the Dashboard or Payments page. Your browser's print w
 ## Frequently asked questions
 
 **My payments disappeared!**
-Check that you're using the **same browser** and the **same version** (online link or downloaded file) as before. If you use the file, open it from the **same location** as before. If you moved the file, or cleared your browser data, the saved data may not be found. Restore your latest backup with **Import Data**.
+Check that you're using the **same browser** and opening the **same file from the same location** as before. If you moved the file, or cleared your browser data, the saved data may not be found. Restore your latest backup with **Import Data**.
 
 **Can I use it on my phone and computer at the same time?**
 Each device keeps its own data. You can move data between them with **Export Data** and **Import Data**, but they don't sync automatically.
 
 **Does it need the internet?**
-The downloaded file works fully offline. The online version needs an internet connection to open.
+No. It works fully offline.
 
 **Is my data safe?**
 Your data never leaves your device. Anyone with access to your computer and browser could open the app, so protect your computer with a password as usual.

@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
+import { IS_DEMO } from '../config';
 import type { AppData, CurrencyCode, Payment, PaymentInput, Settings, Theme } from '../types';
 import { createDemoPayments } from '../data/demoData';
 import { todayISO } from '../utils/date';
@@ -41,7 +42,8 @@ function initialData(load: LoadResult): AppData {
 
 export function AppDataProvider({ children }: { children: ReactNode }) {
   const notify = useToast();
-  const [load] = useState<LoadResult>(() => loadAppData());
+  // The online demo never reads or writes browser storage: every visit starts fresh.
+  const [load] = useState<LoadResult>(() => (IS_DEMO ? { status: 'first-launch' } : loadAppData()));
   const [data, setData] = useState<AppData>(() => initialData(load));
   const [storageWorks, setStorageWorks] = useState(load.status !== 'unavailable');
   const warnedAboutSaving = useRef(false);
@@ -65,6 +67,7 @@ export function AppDataProvider({ children }: { children: ReactNode }) {
 
   // Save automatically whenever anything changes.
   useEffect(() => {
+    if (IS_DEMO) return;
     const saved = saveAppData(data);
     setStorageWorks(saved);
     if (!saved && !warnedAboutSaving.current && load.status !== 'unavailable') {

@@ -6,7 +6,7 @@ It's built for designers, developers, photographers, writers, consultants and an
 
 > **© 2026 DigitoolsIN. All rights reserved.** This code is publicly *visible*, but it is **not open source**. You may not copy, reuse, redistribute or resell it, or host it as a service. The product is sold through DigitoolsIN's Etsy shop; see [LICENSE.txt](LICENSE.txt).
 
-**Live app:** [https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/](https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/)
+**Try the free demo:** [https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/](https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/)
 
 > **Not a developer?** You don't need anything in this file. Open the ready-to-use app file included in your download and read **USER-GUIDE.md**.
 
@@ -81,23 +81,20 @@ You can:
 
 > **Note:** browsers store data separately for each address. Data saved while using `npm run dev` (localhost) won't appear when you open the built file directly, and the reverse is also true. Use Export / Import to move data between them.
 
-## Deploying online
+## Full version and online demo
 
-The live app is hosted on **Vercel**, which rebuilds it automatically on every push to `main`. Deployment Protection must stay **off** so buyers can open it without a Vercel login. Always share the project address above, never a per-deployment address with a random code in it: those are frozen on one version.
+The same code builds two versions:
 
-### Alternative: GitHub Pages
+| Command | Builds | Saves data? | Export / Import |
+| --- | --- | --- | --- |
+| `npm run build` | **Full version**, the file buyers download | Yes, in the browser | Yes |
+| `npm run build:demo` | **Free demo** for the public link | No, resets on every visit | Off |
 
-The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that builds the app and publishes it to GitHub Pages on every push to `main`.
+The demo also shows a banner linking to the Etsy shop. The shop link is set in `src/config.ts`. Run `npm run dev:demo` to preview the demo locally.
 
-1. Push the project to GitHub.
-2. In the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
-3. Push to `main` (or run the workflow manually from the **Actions** tab).
+**Hosting the demo:** the demo is hosted on Vercel. `vercel.json` tells Vercel to run `npm run build:demo`, and it rebuilds on every push to `main`. Vercel's **Deployment Protection** must be off so visitors can open it without a Vercel login. Always share the project address above, never a per-deployment address with a random code in it: those are frozen on one version.
 
-The app is then live at `https://<username>.github.io/<repository>/`.
-
-The build is a single static file, so it can also be hosted on Netlify, Cloudflare Pages or Vercel with build command `npm run build` and output folder `dist`.
-
-> **Keep the address stable.** Browser data belongs to one exact address. If you move the app to a different URL, users' saved payments won't show there. Tell them to Export, then Import at the new address.
+**Hosting the full version yourself:** build with `npm run build` and upload `dist/index.html` to any static host. If you use Vercel, delete `vercel.json` first, otherwise Vercel builds the demo.
 
 ## Other scripts
 

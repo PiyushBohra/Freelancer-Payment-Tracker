@@ -6,6 +6,7 @@ import { Button } from '../components/UI/Button';
 import { Card } from '../components/UI/Card';
 import { ConfirmDialog } from '../components/UI/ConfirmDialog';
 import { PageHeader } from '../components/UI/PageHeader';
+import { IS_DEMO } from '../config';
 import { useAppData } from '../context/AppDataContext';
 import { useToast } from '../context/ToastContext';
 import { CURRENCIES } from '../types';
@@ -29,6 +30,7 @@ export function Settings() {
   const [confirmingClear, setConfirmingClear] = useState(false);
 
   function handleExport() {
+    if (IS_DEMO) return;
     try {
       const file = createExportFile(payments, settings);
       const blob = new Blob([JSON.stringify(file, null, 2)], { type: 'application/json' });
@@ -47,6 +49,7 @@ export function Settings() {
   }
 
   async function handleFileChosen(event: ChangeEvent<HTMLInputElement>) {
+    if (IS_DEMO) return;
     const file = event.target.files?.[0];
     event.target.value = ''; // allow choosing the same file again later
     if (!file) return;
@@ -130,7 +133,11 @@ export function Settings() {
 
         <Section
           title="Data"
-          description="Your payments are saved automatically in this browser’s local storage. Nothing is uploaded anywhere."
+          description={
+            IS_DEMO
+              ? 'In this demo, nothing is saved and backups are turned off. The full version saves your payments automatically on your own device.'
+              : 'Your payments are saved automatically in this browser’s local storage. Nothing is uploaded anywhere.'
+          }
         >
           {!storageWorks && (
             <div
@@ -149,9 +156,13 @@ export function Settings() {
             <DataRow
               icon={Download}
               title="Export Data"
-              description="Download a backup of all your payments as a JSON file."
+              description={
+                IS_DEMO
+                  ? 'Available in the full version: download a backup of all your payments.'
+                  : 'Download a backup of all your payments as a JSON file.'
+              }
               action={
-                <Button variant="secondary" icon={Download} onClick={handleExport}>
+                <Button variant="secondary" icon={Download} onClick={handleExport} disabled={IS_DEMO}>
                   Export Data
                 </Button>
               }
@@ -159,10 +170,19 @@ export function Settings() {
             <DataRow
               icon={Upload}
               title="Import Data"
-              description="Restore payments from a backup file. This replaces your current payments."
+              description={
+                IS_DEMO
+                  ? 'Available in the full version: restore payments from a backup file.'
+                  : 'Restore payments from a backup file. This replaces your current payments.'
+              }
               action={
                 <>
-                  <Button variant="secondary" icon={Upload} onClick={() => fileInputRef.current?.click()}>
+                  <Button
+                    variant="secondary"
+                    icon={Upload}
+                    onClick={() => fileInputRef.current?.click()}
+                    disabled={IS_DEMO}
+                  >
                     Import Data
                   </Button>
                   <input

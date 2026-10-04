@@ -1,3 +1,4 @@
+import { IS_DEMO } from '../config';
 import type { CurrencyCode, Payment } from '../types';
 import { formatMoney } from '../utils/currency';
 import { formatDate } from '../utils/date';
@@ -18,7 +19,7 @@ export function PrintReport({ payments, currency }: PrintReportProps) {
   return (
     <div className="hidden bg-white text-sm text-black print:block">
       <header className="mb-6 border-b-2 border-black pb-4">
-        <h1 className="text-2xl font-bold">Freelancer Payment Report</h1>
+        <h1 className="text-2xl font-bold">Freelancer Payment Report{IS_DEMO && ' (DEMO)'}</h1>
         <p className="mt-1 text-xs text-zinc-600">
           Generated on {new Date().toLocaleDateString(undefined, { dateStyle: 'long' })} ·{' '}
           {summary.paymentCount} payment{summary.paymentCount === 1 ? '' : 's'} · {summary.clientCount} client

@@ -1,9 +1,11 @@
 import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import { HardDrive, Moon, Sun } from 'lucide-react';
+import { IS_DEMO } from '../../config';
 import { useAppData } from '../../context/AppDataContext';
 import type { Page } from '../../types';
 import { focusRing } from '../UI/Button';
+import { DemoBanner } from './DemoBanner';
 import { Logo } from './Logo';
 import { NAV_ITEMS } from './navigation';
 
@@ -86,10 +88,12 @@ export function AppLayout({ page, onNavigate, children }: AppLayoutProps) {
           <div className="rounded-xl border border-zinc-200/80 bg-zinc-50 p-3.5 dark:border-zinc-800 dark:bg-zinc-900">
             <div className="flex items-center gap-2 text-xs font-medium text-zinc-700 dark:text-zinc-200">
               <HardDrive className="size-3.5" aria-hidden="true" />
-              Saved in this browser
+              {IS_DEMO ? 'Demo: nothing is saved' : 'Saved in this browser'}
             </div>
             <p className="mt-1 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">
-              Your data never leaves this device. Export a backup from Settings.
+              {IS_DEMO
+                ? 'Changes reset when you leave. The full version saves your data on your device.'
+                : 'Your data never leaves this device. Export a backup from Settings.'}
             </p>
           </div>
         </div>
@@ -141,7 +145,10 @@ export function AppLayout({ page, onNavigate, children }: AppLayoutProps) {
         tabIndex={-1}
         className="focus:outline-none lg:pl-64"
       >
-        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-10 lg:py-12">{children}</div>
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-10 lg:py-12">
+          {IS_DEMO && <DemoBanner />}
+          {children}
+        </div>
       </main>
     </div>
   );
