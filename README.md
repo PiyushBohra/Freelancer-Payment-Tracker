@@ -4,6 +4,8 @@ A simple, private web app for freelancers to keep track of client payments: what
 
 It's built for designers, developers, photographers, writers, consultants and anyone else who works independently. There are no accounts, subscriptions or servers. Everything runs in your web browser and your data stays on your device.
 
+> **© 2026 DigitoolsIN. All rights reserved.** This code is publicly *visible*, but it is **not open source**. You may not copy, reuse, redistribute or resell it, or host it as a service. The product is sold through DigitoolsIN's Etsy shop; see [LICENSE.txt](LICENSE.txt).
+
 > **Not a developer?** You don't need anything in this file. Open the ready-to-use app file included in your download and read **USER-GUIDE.md**.
 
 ---
