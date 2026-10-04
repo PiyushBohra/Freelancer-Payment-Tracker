@@ -6,6 +6,8 @@ It's built for designers, developers, photographers, writers, consultants and an
 
 > **© 2026 DigitoolsIN. All rights reserved.** This code is publicly *visible*, but it is **not open source**. You may not copy, reuse, redistribute or resell it, or host it as a service. The product is sold through DigitoolsIN's Etsy shop; see [LICENSE.txt](LICENSE.txt).
 
+**Live app:** [https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/](https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/)
+
 > **Not a developer?** You don't need anything in this file. Open the ready-to-use app file included in your download and read **USER-GUIDE.md**.
 
 ---
@@ -79,7 +81,11 @@ You can:
 
 > **Note:** browsers store data separately for each address. Data saved while using `npm run dev` (localhost) won't appear when you open the built file directly, and the reverse is also true. Use Export / Import to move data between them.
 
-## Deploying online (GitHub Pages)
+## Deploying online
+
+The live app is hosted on **Vercel**, which rebuilds it automatically on every push to `main`. Deployment Protection must stay **off** so buyers can open it without a Vercel login. Always share the project address above, never a per-deployment address with a random code in it: those are frozen on one version.
+
+### Alternative: GitHub Pages
 
 The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that builds the app and publishes it to GitHub Pages on every push to `main`.
 

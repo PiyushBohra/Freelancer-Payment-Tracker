@@ -26,7 +26,7 @@ You can use the tracker in **two ways**. Pick one and stick with it.
 
 ### Option A: Use it online (easiest)
 
-1. Open this link in your browser: **https://piyushbohra.github.io/Freelancer-Payment-Tracker/**
+1. Open this link in your browser: **[https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/](https://freelancer-payment-tracker-piyushs-projects-9244de54.vercel.app/)**
 2. **Bookmark it**, or on a phone use **"Add to Home Screen"**, so it's always one tap away.
 
 This works on your computer, tablet and phone. It needs an internet connection to open.
